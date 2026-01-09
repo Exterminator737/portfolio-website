@@ -1,12 +1,24 @@
-import MainNav from "@/components/MainNav";
+﻿import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import About from "@/components/About";
+import Projects from "@/components/Projects";
+import Experience from "@/components/Experience";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <div>
-        <MainNav />
-      </div>
-      <div>Hi I am Vee</div>
-    </div>
+    <>
+      <Header />
+      <main className="fade-in">
+        <Hero />
+        <About />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
+
