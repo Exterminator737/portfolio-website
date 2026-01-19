@@ -7,6 +7,7 @@ export type Project = {
   image?: string; // optional image path for project thumbnail
   github?: string; // optional until available
   live?: string; // optional until available
+  expanded?: boolean; // track if description is expanded
 };
 
 export const projects: Project[] = [
@@ -14,7 +15,7 @@ export const projects: Project[] = [
     id: "proj-1",
     title: "Full-Stack Demo App",
     description:
-      "A sample full-stack application demonstrating CRUD, authentication, and a responsive UI.",
+      "A sample full-stack application demonstrating CRUD operations, JWT authentication, responsive UI design, real-time updates, database integration, API development, error handling, security best practices, performance optimization, and deployment strategies.",
     tech: [
       "Next.js",
       "TypeScript",

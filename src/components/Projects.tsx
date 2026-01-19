@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import Section from "./Section";
-import { projects } from "@/data/projects";
+import { projects, type Project } from "@/data/projects";
 
 const ICON_MAP: Record<string, string> = {
   React: "/icons/React.svg",
@@ -17,6 +20,25 @@ const ICON_MAP: Record<string, string> = {
 };
 
 export default function Projects() {
+  const [expandedProjects, setExpandedProjects] = useState<Set<string>>(
+    new Set()
+  );
+
+  const toggleExpanded = (projectId: string) => {
+    setExpandedProjects((prev) => {
+      const newSet = new Set(prev);
+      if (newSet.has(projectId)) {
+        newSet.delete(projectId);
+      } else {
+        newSet.add(projectId);
+      }
+      return newSet;
+    });
+  };
+
+  const isDescriptionLong = (description: string) => {
+    return description.length > 100;
+  };
   return (
     <Section id="projects" className="py-20">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
@@ -44,9 +66,25 @@ export default function Projects() {
                 <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                   {p.title}
                 </h3>
-                <p className="mt-4 line-clamp-2 text-sm text-zinc-600 transition-all group-hover:line-clamp-none dark:text-zinc-400">
-                  {p.description}
-                </p>
+                <div className="mt-4">
+                  <p
+                    className={`text-sm text-zinc-600 transition-all dark:text-zinc-400 ${
+                      expandedProjects.has(p.id)
+                        ? "line-clamp-none"
+                        : "line-clamp-2"
+                    }`}
+                  >
+                    {p.description}
+                  </p>
+                  {isDescriptionLong(p.description) && (
+                    <button
+                      onClick={() => toggleExpanded(p.id)}
+                      className="mt-2 text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                    >
+                      {expandedProjects.has(p.id) ? "Read less" : "Read more"}
+                    </button>
+                  )}
+                </div>
                 <div className="mt-5 flex flex-wrap items-center gap-2">
                   {p.tech.map((t) => {
                     const icon =
