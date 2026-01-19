@@ -24,9 +24,8 @@ export default function Projects() {
           Projects
         </h2>
         <p className="mt-3 max-w-3xl text-zinc-600 dark:text-zinc-400">
-          These are placeholders you can replace later. Each card reveals more
-          details on hover. Buttons are disabled until you link to GitHub and a
-          live preview.
+          Each card reveals more details on hover. Buttons are disabled until
+          you link to GitHub and a live preview.
         </p>
 
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -36,7 +35,7 @@ export default function Projects() {
                 <div className="mb-4 overflow-hidden rounded-md border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
                   <Image
                     src={p.image ?? "/placeholders/project.svg"}
-                    alt={`${p.title} image placeholder`}
+                    alt={`${p.title} image`}
                     width={640}
                     height={360}
                     className="h-40 w-full object-cover"
