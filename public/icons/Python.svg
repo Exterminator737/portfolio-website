@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="py-a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3776AB"/>
+      <stop offset="100%" stop-color="#4B8BBE"/>
+    </linearGradient>
+    <linearGradient id="py-b" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFDF5D"/>
+      <stop offset="100%" stop-color="#FFD43B"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="url(#py-a)" d="M12 2c2.761 0 5 2.239 5 5v2.25c0 1.24-1.01 2.25-2.25 2.25H9.25A2.25 2.25 0 0 1 7 9.25V8c0-3.314 2.686-6 6-6Zm-2.4 3.3a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2Z"/>
+    <path fill="url(#py-b)" d="M12 22c-2.761 0-5-2.239-5-5v-2.25C7 13.51 8.01 12.5 9.25 12.5h5.5c1.24 0 2.25 1.01 2.25 2.25V16c0 3.314-2.686 6-6 6Zm2.4-3.3a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2Z"/>
+  </g>
+</svg>

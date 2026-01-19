@@ -12,13 +12,18 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-30 w-full border-b border-zinc-100/80 bg-white/80 backdrop-blur supports-backdrop-filter:bg-white/70 dark:border-zinc-800 dark:bg-zinc-950/60">
+    <header className="sticky top-0 z-30 w-full border-b border-zinc-200 bg-white backdrop-blur supports-backdrop-filter:bg-white dark:border-zinc-800 dark:bg-zinc-950/60">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex h-14 items-center justify-between">
           <a href="#home" className="text-sm font-semibold tracking-tight">
-            <span className="text-zinc-900 dark:text-zinc-50">Junior Software Engineer</span>
+            <span className="text-zinc-900 dark:text-zinc-50">
+              Junior Software Engineer
+            </span>
           </a>
-          <nav aria-label="Primary" className="hidden md:flex items-center gap-6">
+          <nav
+            aria-label="Primary"
+            className="hidden md:flex items-center gap-6"
+          >
             {links.map((l) => (
               <a
                 key={l.href}

@@ -39,7 +39,7 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-pressed={isDark}
       aria-label="Toggle theme"
-      className="inline-flex items-center gap-2 rounded-md border border-zinc-300 dark:border-zinc-700 bg-white/70 dark:bg-zinc-900/70 px-3 py-2 text-sm font-medium text-zinc-900 dark:text-zinc-50 shadow-sm hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+      className="inline-flex items-center gap-2 rounded-md border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-900/70 px-3 py-2 text-sm font-medium text-zinc-900 dark:text-zinc-50 shadow-sm hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
     >
       <span className="text-lg" aria-hidden>
         {isDark ? "🌙" : "☀️"}

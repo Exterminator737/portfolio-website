@@ -32,7 +32,7 @@ export default function Experience() {
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {capabilities.map((c) => (
             <li key={c.title} className="h-full">
-              <div className="h-full rounded-xl border border-zinc-200 bg-white/70 p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950/70">
+              <div className="h-full rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950/70">
                 <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                   {c.title}
                 </h3>

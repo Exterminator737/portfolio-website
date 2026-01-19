@@ -4,6 +4,7 @@ export type Project = {
   title: string;
   description: string;
   tech: string[];
+  image?: string; // optional image path for project thumbnail
   github?: string; // optional until available
   live?: string; // optional until available
 };

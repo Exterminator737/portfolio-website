@@ -46,7 +46,7 @@ export default function Contact() {
         <div className="mt-8 grid gap-8 md:grid-cols-2">
           <form
             onSubmit={onSubmit}
-            className="rounded-xl border border-zinc-200 bg-white/70 p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/70"
+            className="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/70"
             noValidate
           >
             <div className="grid gap-4">
@@ -114,7 +114,7 @@ export default function Contact() {
             </div>
           </form>
 
-          <div className="rounded-xl border border-zinc-200 bg-white/70 p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/70">
+          <div className="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-950/70">
             <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
               Connect
             </h3>

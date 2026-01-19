@@ -1,6 +1,7 @@
 ﻿import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
+import Certifications from "@/components/Certifications";
 import Projects from "@/components/Projects";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
@@ -13,6 +14,7 @@ export default function Home() {
       <main className="fade-in">
         <Hero />
         <About />
+        <Certifications />
         <Projects />
         <Experience />
         <Contact />
@@ -21,4 +23,3 @@ export default function Home() {
     </>
   );
 }
-
