@@ -44,10 +44,10 @@ export default function Projects() {
                 <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-100">
                   {p.title}
                 </h3>
-                <p className="mt-2 line-clamp-2 text-sm text-zinc-600 transition-all group-hover:line-clamp-none dark:text-zinc-400">
+                <p className="mt-4 line-clamp-2 text-sm text-zinc-600 transition-all group-hover:line-clamp-none dark:text-zinc-400">
                   {p.description}
                 </p>
-                <div className="mt-3 flex flex-wrap items-center gap-2">
+                <div className="mt-5 flex flex-wrap items-center gap-2">
                   {p.tech.map((t) => {
                     const icon =
                       ICON_MAP[t] ?? ICON_MAP[t.replace(/\s+/g, "")] ?? null;
@@ -64,7 +64,7 @@ export default function Projects() {
                     ) : null;
                   })}
                 </div>
-                <div className="mt-auto flex items-center gap-3">
+                <div className="mt-6 flex items-center gap-3">
                   <button
                     type="button"
                     disabled
