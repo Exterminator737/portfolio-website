@@ -12,7 +12,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     id: "proj-1",
-    title: "Full-Stack Demo App (Placeholder)",
+    title: "Full-Stack Demo App",
     description:
       "A sample full-stack application demonstrating CRUD, authentication, and a responsive UI.",
     tech: [
@@ -26,14 +26,14 @@ export const projects: Project[] = [
   },
   {
     id: "proj-2",
-    title: "REST API Service (Placeholder)",
+    title: "REST API Service",
     description:
       "A RESTful API with routing, validation, and unit tests. Includes Postman collection.",
     tech: ["Node.js", "Express", "Jest", "MongoDB"],
   },
   {
     id: "proj-3",
-    title: "Frontend UI Components (Placeholder)",
+    title: "Frontend UI Components",
     description:
       "A collection of accessible, reusable React components with documentation.",
     tech: ["React", "TypeScript", "TailwindCSS"],
