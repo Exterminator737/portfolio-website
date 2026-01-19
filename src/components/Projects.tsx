@@ -65,7 +65,7 @@ export default function Projects() {
                     ) : null;
                   })}
                 </div>
-                <div className="mt-5 flex items-center gap-3">
+                <div className="mt-5 flex items-center justify-center gap-3">
                   <button
                     type="button"
                     disabled
