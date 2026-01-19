@@ -32,7 +32,7 @@ export default function Projects() {
         <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((p) => (
             <li key={p.id}>
-              <article className="group h-full rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950/70">
+              <article className="group flex h-full flex-col rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-950/70">
                 <div className="mb-4 overflow-hidden rounded-md border border-zinc-200 bg-zinc-100 dark:border-zinc-800 dark:bg-zinc-900">
                   <Image
                     src={p.image ?? "/placeholders/project.svg"}
@@ -65,7 +65,7 @@ export default function Projects() {
                     ) : null;
                   })}
                 </div>
-                <div className="mt-5 flex items-center justify-center gap-3">
+                <div className="mt-auto flex items-center gap-3">
                   <button
                     type="button"
                     disabled
